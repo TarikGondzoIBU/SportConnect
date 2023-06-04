@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="newsVM" type="com.harissapplication.app.modules.news.data.viewmodel.NewsVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linear16news"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowlineseventeen"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStyleindigo_800">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlineseventeen"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_63pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_weight="0.57" android:layout_width="0dp" android:orientation="vertical">
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineSeventeen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_29pxh"/>
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineSixteen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_29pxh"/>
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineFifteen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_29pxh"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtNews"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_62pxv"
+                android:layout_marginEnd="@dimen/_273pxh"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_weight="0.43" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{newsVM.newsModel.txtNews}"
+                style="@style/txtInterregular16_3" tools:text="@string/lbl_news"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageScreenshot2023"
+            android:layout_height="@dimen/_790pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_screenshot2023_790x390}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_screenshot2023_790x390"/>
+    </LinearLayout>
+</layout>

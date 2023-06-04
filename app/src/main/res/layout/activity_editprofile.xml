@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="editprofileVM" type="com.harissapplication.app.modules.editprofile.data.viewmodel.EditprofileVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frame19editprofile"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumneditprofile"
+            android:layout_gravity="top|start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStacklineseventeen"
+                android:layout_height="@dimen/_210pxv" android:layout_width="match_parent">
+                <LinearLayout android:id="@+id/linearRowlineseventeen"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyleindigo_800">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnlineseventeen"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_63pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_42pxv"
+                        android:layout_weight="0.42"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <View android:background="@color/red_500"
+                            android:id="@+id/lineLineSeventeen"
+                            android:layout_height="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_29pxh"/>
+                        <View android:background="@color/red_500"
+                            android:id="@+id/lineLineSixteen"
+                            android:layout_height="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_29pxh"/>
+                        <View android:background="@color/red_500"
+                            android:id="@+id/lineLineFifteen"
+                            android:layout_height="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_29pxh"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEditProfile"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_63pxv"
+                        android:layout_marginEnd="@dimen/_232pxh"
+                        android:layout_marginTop="@dimen/_41pxv"
+                        android:layout_weight="0.58"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{editprofileVM.editprofileModel.txtEditProfile}"
+                        style="@style/txtInterregular16_3" tools:text="@string/lbl_edit_profile"/>
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/frameStackellipsetwentyfive"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_124pxv"
+                    android:layout_marginEnd="@dimen/_135pxh"
+                    android:layout_marginStart="@dimen/_135pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_120pxh">
+                    <View
+                        android:background="@drawable/rectangle_bg_bluegray_100_radius_62"
+                        android:id="@+id/viewEllipseTwentyFive"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_124pxh" android:layout_width="@dimen/_120pxh"/>
+                    <ImageView android:id="@+id/imageDownloadOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_102pxh"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_19pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="@dimen/_81pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_15pxh}"
+                        imageRes="@{@drawable/img_download1}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_download1"/>
+                </FrameLayout>
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtDamir"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{editprofileVM.editprofileModel.txtDamir}"
+                style="@style/txtInterregular16_5" tools:text="@string/lbl_damir"/>
+            <View android:background="@color/black_900"
+                android:id="@+id/lineLineEighteen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_110pxh"/>
+            <FrameLayout android:id="@+id/frameStacklinenineteen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_110pxh">
+                <View android:background="@color/black_900"
+                    android:id="@+id/lineLineNineteen"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_110pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBegic"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_29pxh"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{editprofileVM.editprofileModel.txtBegic}"
+                    style="@style/txtInterregular16_5" tools:text="@string/lbl_begic"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStacklinetwenty"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_38pxv" android:layout_width="@dimen/_279pxh">
+                <View android:background="@color/black_900"
+                    android:id="@+id/lineLineTwenty"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_279pxh"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtSarajevoBosni"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{editprofileVM.editprofileModel.txtSarajevoBosni}"
+                    style="@style/txtInterregular16_5" tools:text="@string/msg_sarajevo_bosni"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPERSONALDATA"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_57pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{editprofileVM.editprofileModel.txtPERSONALDATA}"
+                style="@style/txtInterblack16_2" tools:text="@string/lbl_personal_data"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDateofBirth"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_51pxh"
+                android:layout_marginStart="@dimen/_51pxh"
+                android:layout_marginTop="@dimen/_36pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{editprofileVM.editprofileModel.txtDateofBirth}"
+                style="@style/txtInterregular16_5" tools:text="@string/lbl_date_of_birth"/>
+            <View android:background="@color/black_900"
+                android:id="@+id/lineLineTwentyOne"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_66pxh"
+                android:layout_marginStart="@dimen/_66pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_166pxh"/>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowid"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtID"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.06"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{editprofileVM.editprofileModel.txtID}"
+                    style="@style/txtInterregular16_5" tools:text="@string/lbl_id"/>
+                <View android:background="@color/black_900"
+                    android:id="@+id/lineLineTwentyTwo"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_weight="0.94" android:layout_width="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowrole"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRole"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{editprofileVM.editprofileModel.txtRole}"
+                    style="@style/txtInterregular16_5" tools:text="@string/lbl_role"/>
+                <View android:background="@color/black_900"
+                    android:id="@+id/lineLineTwentyThree"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_weight="0.87" android:layout_width="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

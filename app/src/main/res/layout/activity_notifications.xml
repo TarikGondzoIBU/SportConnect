@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationsVM" type="com.harissapplication.app.modules.notifications.data.viewmodel.NotificationsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linear18notification"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowlineseventeen"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStyleindigo_800">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlineseventeen"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_63pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_weight="0.35" android:layout_width="0dp" android:orientation="vertical">
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineSeventeen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_29pxh"/>
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineSixteen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_29pxh"/>
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineFifteen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_29pxh"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtNotifications"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_62pxv"
+                android:layout_marginEnd="@dimen/_225pxh"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_weight="0.65" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{notificationsVM.notificationsModel.txtNotifications}"
+                style="@style/txtInterregular16_3" tools:text="@string/lbl_notifications"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtManageyournot"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_94pxh"
+            android:layout_marginStart="@dimen/_94pxh"
+            android:layout_marginTop="@dimen/_164pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{notificationsVM.notificationsModel.txtManageyournot}"
+            style="@style/txtInterregular16_5" tools:text="@string/msg_manage_your_not"/>
+    </LinearLayout>
+</layout>

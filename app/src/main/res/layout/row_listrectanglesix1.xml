@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectanglesix1RowModel" type="com.harissapplication.app.modules.setupthree.data.model.Listrectanglesix1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectanglesix"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <FrameLayout android:id="@+id/frameStackrectanglesix"
+            android:layout_height="@dimen/_43pxv" android:layout_width="@dimen/_278pxh">
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_ab_radius_9"
+                android:id="@+id/viewRectangleSix"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_43pxv"
+                android:layout_marginEnd="@dimen/_1pxh" android:layout_width="@dimen/_278pxh"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtCortinaWorldC"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectanglesix1RowModel.txtCortinaWorldC}"
+                style="@style/txtInterregular16_2" tools:text="@string/msg_cortina_world_c"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStacklinefive"
+            android:layout_height="@dimen/_28pxv"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="@dimen/_28pxh" style="@style/groupStylewhite_A700_b5cornerRadius">
+            <View android:background="@color/red_500_db"
+                android:id="@+id/lineLineFive"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_13pxh"
+                android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_3pxh"/>
+            <View android:background="@color/red_500"
+                android:id="@+id/lineLineSix"
+                android:layout_gravity="bottom|center"
+                android:layout_height="@dimen/_3pxv"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_26pxh"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

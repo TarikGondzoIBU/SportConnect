@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="createprofileVM" type="com.harissapplication.app.modules.createprofile.data.viewmodel.CreateprofileVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear8createprofile"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_800">
+        <ImageView android:id="@+id/imageYourparagraph"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_145pxh"
+            android:layout_marginEnd="@dimen/_98pxh"
+            android:layout_marginStart="@dimen/_98pxh"
+            android:layout_marginTop="@dimen/_69pxv"
+            android:layout_width="@dimen/_175pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_yourparagraph_145x175}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_yourparagraph_145x175"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_54pxv"
+            android:layout_marginEnd="@dimen/_46pxh"
+            android:layout_marginStart="@dimen/_54pxh"
+            android:layout_marginTop="@dimen/_127pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_51pxh"
+                android:layout_marginStart="@dimen/_52pxh"
+                android:layout_width="match_parent"
+                android:text="@{createprofileVM.createprofileModel.txtLanguage}"
+                style="@style/txtInterregular25_1" tools:text="@string/msg_we_are_creating"/>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtPleasewaitwhi"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_327pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{createprofileVM.createprofileModel.txtPleasewaitwhi}"
+                style="@style/txtInterregular16_3" tools:text="@string/msg_please_wait_whi"/>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowellipsetwentyone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_52pxh"
+                android:layout_marginStart="@dimen/_52pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_red_500_radius_12"
+                    android:id="@+id/viewEllipseTwentyOne"
+                    android:layout_height="@dimen/_24pxh" android:layout_width="@dimen/_24pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_red_500_radius_10"
+                    android:id="@+id/viewEllipseTwentyThree"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_20pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_red_500_radius_10"
+                    android:id="@+id/viewEllipseTwentyTwo"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_20pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_red_500_radius_9"
+                    android:id="@+id/viewEllipseTwentyTwoOne"
+                    android:layout_height="@dimen/_18pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_18pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_red_500_db_radius_7"
+                    android:id="@+id/viewEllipseTwentyTwoTwo"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_14pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_red_500_radius_5"
+                    android:id="@+id/viewEllipseTwentyFour"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_10pxh"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
