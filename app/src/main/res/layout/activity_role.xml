@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="roleVM" type="com.harissapplication.app.modules.role.data.viewmodel.RoleVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackellipsefourteen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnellipsethree"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowellipsethree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackellipsethree"
+                    android:layout_height="@dimen/_248pxv" android:layout_width="@dimen/_257pxh">
+                    <ImageView android:id="@+id/imageEllipseThree"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_248pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_ellipse3}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse3"/>
+                    <FrameLayout android:id="@+id/frameStacksetup"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_101pxv"
+                        android:layout_marginBottom="@dimen/_46pxv"
+                        android:layout_marginEnd="@dimen/_40pxh"
+                        android:layout_marginStart="@dimen/_40pxh"
+                        android:layout_marginTop="@dimen/_46pxv" android:layout_width="@dimen/_119pxh">
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtSetup"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{roleVM.roleModel.txtSetup}"
+                            style="@style/txtInterregular30" tools:text="@string/lbl_setup"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtYour"
+                            android:layout_gravity="bottom|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_29pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_29pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{roleVM.roleModel.txtYour}"
+                            style="@style/txtInterregular30" tools:text="@string/lbl_your"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtProfile"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_11pxh"
+                            android:layout_marginStart="@dimen/_11pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{roleVM.roleModel.txtProfile}"
+                            style="@style/txtInterregular30" tools:text="@string/lbl_profile"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_radius_6_5"
+                    android:id="@+id/viewEllipseFourteen"
+                    android:layout_height="@dimen/_13pxh"
+                    android:layout_marginBottom="@dimen/_213pxv"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_marginTop="@dimen/_22pxv" android:layout_width="@dimen/_9pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_bluegray_100_border_gray_500_radius_6_5"
+                    android:id="@+id/viewEllipseFifteen"
+                    android:layout_height="@dimen/_13pxh"
+                    android:layout_marginBottom="@dimen/_213pxv"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_22pxv" android:layout_width="@dimen/_9pxh"/>
+                <View
+                    android:background="@drawable/rectangle_bg_bluegray_100_border_gray_500_radius_6_5"
+                    android:id="@+id/viewEllipseSixteen"
+                    android:layout_height="@dimen/_13pxh"
+                    android:layout_marginBottom="@dimen/_213pxv"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_22pxv" android:layout_width="@dimen/_9pxh"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtWhatisyourro"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_42pxh"
+                android:layout_marginStart="@dimen/_42pxh"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{roleVM.roleModel.txtWhatisyourro}"
+                style="@style/txtInterregular25" tools:text="@string/msg_what_is_your_ro"/>
+            <LinearLayout android:id="@+id/linearRow3913918778run"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_37pxh"
+                android:layout_marginStart="@dimen/_42pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStack3913918778run"
+                    android:layout_height="@dimen/_121pxv"
+                    android:layout_width="@dimen/_119pxh" style="@style/groupStylered_600_70cornerRadius">
+                    <ImageView android:id="@+id/image3913918778run"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_105pxh"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_width="@dimen/_92pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_3913918778run}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_3913918778run"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackpngclipartcoa"
+                    android:layout_height="@dimen/_121pxv"
+                    android:layout_marginStart="@dimen/_73pxh"
+                    android:layout_width="@dimen/_119pxh" style="@style/groupStylered_600_70cornerRadius">
+                    <ImageView android:id="@+id/imagePngclipartcoa"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_98pxh"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="@dimen/_97pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_pngclipartcoa}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_pngclipartcoa"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowprice"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_42pxh"
+                android:layout_marginStart="@dimen/_42pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPrice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_weight="0.51"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{roleVM.roleModel.txtPrice}"
+                    style="@style/txtInterblack18" tools:text="@string/lbl_player"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCOACH"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_126pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_weight="0.49"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{roleVM.roleModel.txtCOACH}"
+                    style="@style/txtInterblack18" tools:text="@string/lbl_coach"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameStackellipsefive"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_121pxv"
+                android:layout_marginEnd="@dimen/_42pxh"
+                android:layout_marginStart="@dimen/_42pxh"
+                android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_126pxh">
+                <View
+                    android:background="@drawable/rectangle_bg_red_600_70_radius_60_5"
+                    android:id="@+id/viewEllipseFive"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_121pxh"
+                    android:layout_marginEnd="@dimen/_4pxh"
+                    android:layout_marginStart="@dimen/_3pxh" android:layout_width="@dimen/_119pxh"/>
+                <ImageView android:id="@+id/image34343273fans"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_89pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_34343273fans}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_34343273fans"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtFAN"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_42pxh"
+                android:layout_marginStart="@dimen/_42pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{roleVM.roleModel.txtFAN}"
+                style="@style/txtInterblack18" tools:text="@string/lbl_fan"/>
+            <ImageView android:id="@+id/imageEllipseEight"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_321pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="@dimen/_193pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_ellipse8}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse8"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

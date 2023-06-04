@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="matchesoneVM" type="com.harissapplication.app.modules.matchesone.data.viewmodel.MatchesoneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linear11matchesOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowlineseventeen"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStyleindigo_800">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlineseventeen"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_60pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_weight="0.27" android:layout_width="0dp" android:orientation="vertical">
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineSeventeen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_29pxh"/>
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineSixteen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_29pxh"/>
+                <View android:background="@color/red_500"
+                    android:id="@+id/lineLineFifteen"
+                    android:layout_height="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_29pxh"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFollowingmatch"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_62pxv"
+                android:layout_marginEnd="@dimen/_179pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_weight="0.73" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{matchesoneVM.matchesoneModel.txtFollowingmatch}"
+                style="@style/txtInterregular16_3" tools:text="@string/msg_following_match"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageScreenshot2023"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_678pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="@dimen/_354pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_screenshot2023_678x354}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_screenshot2023_678x354"/>
+    </LinearLayout>
+</layout>
